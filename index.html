@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thyra Simons | Computer Engineering Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(180deg, #020617 0%, var(--bg-color) 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: var(--accent-color);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .skill-tag {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+        }
+
+        .experience-item h3 {
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        .experience-item .date {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Thyra Simons</h1>
+        <p>Computer Engineering Student | Systems Programmer | Tech Enthusiast</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a Computer Engineering student at the University of Utah with a minor in Spanish. I have a strong passion for low-level systems programming, computer architecture, and solving complex technical problems. When I'm not studying or tutoring, I enjoy building and troubleshooting PCs, gaming, and exploring nerd culture.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">C / C++</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Bash / Linux</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Relational Databases</span>
+                <span class="skill-tag">PC Hardware & Troubleshooting</span>
+                <span class="skill-tag">Bilingual (English / Spanish)</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Software Ray Tracer</h3>
+                    <p>Developed a CPU-based ray tracer in C++ using the GLM graphics library. Implemented bounding volume hierarchies (BVH) and multi-threading optimization to significantly improve intersection algorithm performance.</p>
+                </div>
+                <div class="project-card">
+                    <h3>x86 Hardware Emulator</h3>
+                    <p>Designed and built an emulator for x86 architecture, demonstrating a deep understanding of instruction sets, memory management, and CPU registers.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Custom Linux Shell</h3>
+                    <p>Built a functional Linux shell environment capable of parsing commands, managing child processes, and handling system interrupts natively.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Memory Allocator</h3>
+                    <p>Implemented a custom dynamic memory allocator to manage heap memory, focusing on performance, fragmentation reduction, and efficient block allocation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Engineering and Computer Science Tutor</h3>
+                <span class="date">University of Utah, Electrical & Computer Engineering Department | Salt Lake City, UT</span>
+                <p>Provide academic support and mentorship to undergraduate students in core engineering and computer science concepts. Assist with debugging code, explaining complex systems architecture, and reinforcing programming fundamentals.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Connect with me on <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">GitHub</a> or <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a>.<br>
+            &copy; 2026 Thyra Simons. Built for GitHub Pages.
+        </p>
+    </footer>
+
+</body>
+</html>
